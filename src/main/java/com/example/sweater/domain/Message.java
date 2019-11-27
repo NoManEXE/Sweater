@@ -32,6 +32,10 @@ public class Message {
         this.tag = tag;
     }
 
+    public String getAuthorName(){
+        return author != null ? author.getUsername() : "<none>";
+    }
+
     public void setText(String text) {
         this.text = text;
     }
